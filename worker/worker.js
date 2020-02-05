@@ -2,7 +2,7 @@ module.exports.processJobs = function processJobs(jobs) {
     var mongoose = require('mongoose');
     var ActivityLog = require('../models/activity_log.js');
     var sendsms = require('../sendsms/apisendsms.js');
-    var clusterWorkerSize = require('os').cpus().length;
+
 
     const configMongo = {
         autoIndex: false,
